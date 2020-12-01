@@ -1,0 +1,7 @@
+SELECT   Stat,  jr,prdH,  COUNT(Stat) AS cpt,  FLOOR(AVG(Db)) AS Dm
+FROM (  SELECT    Stat,    P6mn,    Db,    jr  FROM (
+    SELECT Stat, P6mn,Vit,EXTRACT(year FROM dt) AS an,EXTRACT(dayofyear FROM dt) AS jr, EXTRACT(dayofweek FROM dt) AS js FROM
+      `dir-idf.trafic.debit2019` )  WHERE  (an=2019)   AND (js IN (2, 3, 4, 5, 6))) AS a
+INNER JOIN ( SELECT * FROM`btds20.btds.prdH` )AS b
+ON  a.P6mn=b.P6mn
+GROUP BY Stat, jr, prdH
