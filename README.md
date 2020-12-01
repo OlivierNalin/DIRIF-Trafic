@@ -30,11 +30,6 @@ Sta	STRING	NULLABLE	: Code la station tel qu'il apparait dans le SI de la DIRIF.
 
 ID_SEGMENT	INTEGER	NULLABLE	: code de segment SIRIUS
 
-Pour localiser les stations, à partir des PR, on pourra se référer aux informations publiées ici :
-
-<https://www.data.gouv.fr/fr/datasets/gestionnaires-du-reseau-routier-national/>
-
-
 ID_TYPE_CAPTEUR	INTEGER	NULLABLE	
 
 TATOUAGE	STRING	NULLABLE	: code d'identification pour la maintenance DIRIF
@@ -48,3 +43,9 @@ ax	STRING	NULLABLE	: axe routier
 ln	INTEGER	NULLABLE	
 
 cd	STRING	NULLABLE	: Code simplifié de la station la station
+
+Pour localiser les stations, à partir des axes et PR, on pourra se référer aux informations publiées ici :
+
+<https://www.data.gouv.fr/fr/datasets/gestionnaires-du-reseau-routier-national/>
+
+
