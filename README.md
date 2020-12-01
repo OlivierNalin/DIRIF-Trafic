@@ -18,3 +18,28 @@ dt DATE NULLABLE : Date de la donnée
 P6mn NUMERIC NULLABLE : numéro de période de 6mn, dans la journée (ex : 63 pour 6:12-6:18)
 
 Db NUMERIC NULLABLE : valeur du débit 6mn à la station considérée
+
+## Table des stations de mesures
+Pour connaitre l'ensemble des points de mesures de la DIRIF, on pourra se référer à la table publique BigQuery :
+
+<\`dir-idf.trafic.PointsMesure\`>
+
+Le schéma de la table est le suivant :
+
+Sta	STRING	NULLABLE	: Code la station tel qu'il apparait dans le SI de la DIRIF.
+
+ID_SEGMENT	INTEGER	NULLABLE	: code de segment SIRIUS
+
+ID_TYPE_CAPTEUR	INTEGER	NULLABLE	
+
+TATOUAGE	STRING	NULLABLE	: code d'identification pour la maintenance DIRIF
+
+PR_EQUIP	INTEGER	NULLABLE	: Point de repère
+
+LONGUEUR	INTEGER	NULLABLE	: longueur de la section de référence (surtout utile pour les mesures FCD)
+
+ax	STRING	NULLABLE	: axe routier
+
+ln	INTEGER	NULLABLE	
+
+cd	STRING	NULLABLE	: Code simplifié de la station la station
