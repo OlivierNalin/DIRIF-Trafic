@@ -32,7 +32,7 @@ Sta	STRING	NULLABLE	: Code de la station tel qu'il apparait dans le SI de la DIR
 
 ID_SEGMENT	INTEGER	NULLABLE	: code de segment SIRIUS
 
-ID_TYPE_CAPTEUR	INTEGER	NULLABLE	
+ID_TYPE_CAPTEUR	INTEGER	NULLABLE	: 0 ? , 1 simple boucle, 2 double boucle, 3 FCD
 
 TATOUAGE	STRING	NULLABLE	: code d'identification pour la maintenance DIRIF
 
