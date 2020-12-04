@@ -22,7 +22,7 @@ P6mn NUMERIC NULLABLE : numéro de période de 6mn, dans la journée (ex : 63 po
 Db NUMERIC NULLABLE : valeur du débit 6mn à la station considérée
 
 ## Table des stations de mesures
-Pour connaitre l'ensemble des points de mesures de la DIRIF, on pourra se référer à la table publique BigQuery :
+Pour connaitre l'ensemble des 7895 points de mesures de la DIRIF (dont sections FCD), on pourra se référer à la table publique BigQuery :
 
 <\`dir-idf.trafic.PointsMesure\`>
 
